@@ -12,17 +12,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /*
-    background: url('images/micro.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    */
+    background-color: rgb(18, 18, 18);
 
 }
 
 .wrapper {
     width: 420px;
-    background: transparent;
+    background: rgb(12, 12, 12);
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
@@ -132,38 +128,6 @@ body {
     height: 100px;
 }
 
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden; 
-    
-}
-
-/* CSS to center the video */
-.video-container video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0;
-    opacity: 0.6;
-}
-.video-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1; 
-}
 .git-link {
     position: fixed;
     bottom: 10px; 
