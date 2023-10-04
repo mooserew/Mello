@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swim</title>
-    <link href="layout.css" rel="stylesheet" type="text/css">
+    <title>Login - Melo</title>
+    <link href="layout_login.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="images/uv.png" type="image/icon type">
     
 </head>
 <body>
-    <img src="images/uv.png" alt="Logo" class="centered-image">
     <div class="wrapper">
-        <form action="">
+        <form action="" id="login-form">
             <h1>Login</h1>
             <div class="input-box">
                 <input type="text" placeholder="Username"
@@ -42,9 +41,25 @@
     <div class="section">
         <div class="video-container">
             <video autoplay loop muted>
-                <source src="images/backsea.mp4" type="video/mp4">>
+                <source src="images/concert.mp4" type="video/mp4">>
             </video>
         </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginForm = document.getElementById("login-form");
+    
+            loginForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                // Redirect to the specified URL
+                window.location.href = "http://127.0.0.1:5500/index.html";
+            });
+        });
+    </script>
+    <div class="git-link">
+        <p><b><a href="https://github.com/mooserew/Swim" target="_blank">Github Repository</a></b></p>
     </div>
 </body>
 </html>
