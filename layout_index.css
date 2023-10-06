@@ -1,54 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+/* Reset some default styles and set the font family */
 * {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
 
+/* Style the body */
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Style the top bar */
+.top-bar {
+    width: 100%;
+    height: 60px;
     background-color: rgb(18, 18, 18);
-}
-
-.box {
-    height: 30px;
     display: flex;
-    cursor: pointer;
-    padding: 10px 25px;
-    background: rgb(50, 50, 50);
-    border-radius: 30px;
     align-items: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-    font-size: 18px;
-    position: relative;
+    padding: 0 20px;
 }
 
-.box:hover input,
-.box input:not(:placeholder-shown) {
-    width: 400px;
-    transition: 0.8s;
+/* Style the search container and input */
+.search-container {
+    display: flex;
+    align-items: center;
 }
 
-.box input {
-    font-family: 'Segoe UI', sans-serif;
+.search-container input {
     width: 0;
     outline: none;
     border: none;
     font-weight: 500;
-    transition: 0.8s;
+    transition: width 0.8s;
     background: transparent;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
+    margin-left: 10px;
+    padding-right: 20px;
 }
 
+/* Expand the search input on hover or when it's not empty */
+.top-bar:hover .search-container input,
+.top-bar .search-container input:not(:placeholder-shown) {
+    width: 200px;
+}
+
+/* Style the search icon */
 i.bx.bx-search {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
+/* Style the box elements */
+.box {
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: rgb(50, 50, 50);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/* Style the box container */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    flex-grow: 1;
+}
