@@ -29,6 +29,11 @@ body {
     align-items: center;
 }
 
+.search-container:hover input {
+    width: 200px;
+    transition: width 0.8s;
+}
+
 .search-container input {
     width: 0;
     outline: none;
@@ -42,11 +47,12 @@ body {
     padding-right: 20px;
 }
 
-/* Expand the search input on hover or when it's not empty */
-.top-bar:hover .search-container input,
+.top-bar .search-container input:not(:placeholder-shown):focus,
+.top-bar .search-container input:hover,
 .top-bar .search-container input:not(:placeholder-shown) {
-    width: 200px;
+    width: 0px;
 }
+
 
 /* Style the search icon */
 i.bx.bx-search {
@@ -83,4 +89,44 @@ i.bx.bx-search {
     height: 40px;
     width: 40px;
     margin-right: 20px;
+}
+
+button.Profile,
+button.Home {
+    background-color: rgb(18, 18, 18);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Style the Home button icon when not hovered */
+.top-bar .Home .bx.bxs-home-alt-2 {
+    display: none;
+}
+
+/* Style the Home button icon when hovered */
+.top-bar .Home:hover .bx.bx-home-alt-2 {
+    display: none;
+}
+
+.top-bar .Home:hover .bx.bxs-home-alt-2 {
+    display: inline;
+}
+
+/* Style the Profile button icon when not hovered */
+.top-bar .Profile .bx.bxs-user {
+    display: none;
+}
+
+/* Style the Profile button icon when hovered */
+.top-bar .Profile:hover .bx.bx-user {
+    display: none;
+}
+
+.top-bar .Profile:hover .bx.bxs-user {
+    display: inline;
 }
