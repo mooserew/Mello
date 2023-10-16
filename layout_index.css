@@ -138,18 +138,18 @@ button.Home {
 /* Style the rectangle with rounded corners */
 .rounded-rectangle {
     background-color: rgb(18, 18, 18);
-    border-radius: 20px; /* Reduce border-radius to make corners less rounded */
-    width: 60%; /* Reduce the width to make it smaller */
-    max-width: 600px; /* Reduce the maximum width further to make it smaller */
-    margin: 10px auto; /* Reduce margin for alignment */
-    padding: 10px; /* Reduce padding */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Reduce box-shadow */
+    border-radius: 20px;
+    width: 60%; /* Reduce the width */
+    max-width: 500px; /* Reduce the maximum width further */
+    margin: 10px auto;
+    padding: 10px; /* Adjust the padding as needed */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 65px; /* Adjust the top position */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Center it horizontally */
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Style the "What's new" input box */
@@ -158,24 +158,24 @@ button.Home {
     border: none;
     outline: none;
     color: white;
-    font-size: 14px; /* Reduce font size */
-    padding: 8px; /* Reduce padding */
-    border-radius: 8px; /* Reduce border-radius */
+    font-size: 12px; /* Reduce the font size */
+    padding: 5px; /* Reduce the padding */
+    border-radius: 10px; /* Reduce border-radius */
 }
 
 /* Style the "Post" button */
 .rounded-rectangle button {
-    background-color: #1da1f2; /* Twitter's blue color */
+    background-color: #1da1f2;
     color: white;
     border: none;
-    border-radius: 20px; /* Reduce border-radius */
-    padding: 8px 16px; /* Reduce padding */
-    font-size: 14px; /* Reduce font size */
-    margin-top: 8px; /* Reduce margin-top */
+    border-radius: 15px; /* Reduce border-radius */
+    padding: 8px 12px; /* Reduce the button size */
+    font-size: 12px; /* Reduce the font size */
+    margin-top: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .rounded-rectangle button:hover {
-    background-color: #1590e3; /* Darker blue color on hover */
+    background-color: #1590e3;
 }
