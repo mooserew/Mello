@@ -182,23 +182,23 @@ button.Home {
 }
 
 .rounded-rectangle button:hover {
-    background-color: #1590e3;
+    background-color: #0E7CC2;
 }
 
-/*
+
 .posts-box { 
     background-color: rgb(18, 18, 18);
     border-radius: 20px;
-    width: 60%; /* Reduce the width
-    max-width: 500px; /* Reduce the maximum width further 
+    width: 60%; 
+    max-width: 500px; 
     margin: 10px auto;
-    padding: 10px; /* Adjust the padding as needed 
+    padding: 10px; 
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     display: flex;
     height: 100px;
     flex-direction: column;
     position: absolute;
-    top: 180px;
+    top: 215px;
     left: 50%;
     transform: translateX(-50%);
     justify-content: center;
@@ -216,14 +216,14 @@ button.Home {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 35px; /* Adjust the width as needed 
-    height: 35px; /* Adjust the height as needed 
-    border-radius: 50%; /* Makes the image round 
-    overflow: hidden; /* Clips the image to the rounded shape 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    overflow: hidden; 
 }
 
 .Post-pfp img {
     width: 100%;
     height: 100%;
 }
-*/
+
