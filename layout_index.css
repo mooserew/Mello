@@ -135,6 +135,7 @@ button.Home {
 }
     
 
+
 /* Style the rectangle with rounded corners */
 .rounded-rectangle {
     background-color: rgb(18, 18, 18);
@@ -150,32 +151,79 @@ button.Home {
     top: 65px;
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden; /* Hide vertical scrollbar initially */
 }
 
-/* Style the "What's new" input box */
-.rounded-rectangle input[type="text"] {
+/* Style the "What's new" textarea */
+.rounded-rectangle textarea {
     background-color: transparent;
     border: none;
     outline: none;
     color: white;
-    font-size: 12px; /* Reduce the font size */
-    padding: 5px; /* Reduce the padding */
-    border-radius: 10px; /* Reduce border-radius */
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none; /* Disable manual resizing */
+    width: 100%; /* Expand to the full width of the container */
 }
 
-/* Style the "Post" button */
+
+/* Style the "Post" button (no change) */
 .rounded-rectangle button {
     background-color: #1da1f2;
     color: white;
     border: none;
-    border-radius: 15px; /* Reduce border-radius */
-    padding: 8px 12px; /* Reduce the button size */
-    font-size: 12px; /* Reduce the font size */
+    border-radius: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
     margin-top: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .rounded-rectangle button:hover {
-    background-color: #1590e3;
+    background-color: #0E7CC2;
 }
+
+
+.posts-box { 
+    background-color: rgb(18, 18, 18);
+    border-radius: 20px;
+    width: 60%; 
+    max-width: 500px; 
+    margin: 10px auto;
+    padding: 10px; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+}
+
+.posts-box .Post-text
+{
+    color:white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Post-pfp {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.Post-pfp img {
+    width: 100%;
+    height: 100%;
+}
+

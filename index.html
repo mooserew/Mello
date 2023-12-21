@@ -7,6 +7,8 @@
     <link href="layout_index.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/uv.png" type="image/icon type">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="index_script.js"></script>
 </head>
 <body>
     <div class="top-bar">
@@ -32,11 +34,21 @@
 </div> <!-- Light gray top bar -->
 <div class="box-container">
     <div class="rounded-rectangle">
-        <input type="text" placeholder="What's Your Musical Mood Today?">
+        <textarea placeholder="What's Your Musical Mood Today?" maxlength="240" rows="1"></textarea>
         <button class="post-button">Post</button>
     </div>
+
+    <div class="posts-box">
+        <p class="Post-text">Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Morbi hendrerit 
+            tempus massa. Donec eros velit, scelerisque 
+            et tincidunt ut, eleifend quis orci. Proin et fermentum diam.</p>
+            <div class="Post-pfp"><img src="images/pfpex.jpg" alt="Profile Picture"></div>
+            <i class='bx bxs-heart' ></i>
+            <i class='bx bx-heart' ></i>
+    </div>
+
+    
 </div>
-</body>
-</html>
 </body>
 </html>
