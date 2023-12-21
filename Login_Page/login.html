@@ -7,7 +7,7 @@
     <title>Login - Melo</title>
     <link href="layout_login.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="images/uv.png" type="image/icon type">
+    <link rel="icon" href="../images/uv.png" type="image/icon type">
     
 </head>
 <body>
@@ -33,23 +33,10 @@
             <button type="submit" class="btn">Login</button>
 
             <div class="register-link">
-                <p>Don't have an account? <a 
-                href="#">Register</a></p>
+                <p>Don't have an account? <a href="../Register_Page/register.html">Register</a></p>
             </div>
         </form>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginForm = document.getElementById("login-form");
-    
-            loginForm.addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent the default form submission
-    
-                // Redirect to the specified URL
-                window.location.href = "http://127.0.0.1:5500/index.html";
-            });
-        });
-    </script>
     <div class="git-link">
         <p><b><a href="https://github.com/mooserew/Swim" target="_blank">Github Repository</a></b></p>
     </div>
